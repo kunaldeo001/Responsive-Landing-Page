@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+            text-align: center;
+        }
+        
+        .header {
+            padding: 60px;
+            font-size: 30px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        
+        .features,
+        .testimonials,
+        .cta {
+            margin: 50px 0;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .features:hover,
+        .testimonials:hover,
+        .cta:hover {
+            transform: scale(1.05);
+        }
+        
+        h2 {
+            margin-bottom: 20px;
+            font-size: 26px;
+            text-transform: uppercase;
+        }
+        
+        .feature-list,
+        .testimonial-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .feature,
+        .testimonial {
+            flex: 1 1 350px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background 0.3s ease;
+        }
+        
+        .feature:hover,
+        .testimonial:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .cta button {
+            background: #ffcc00;
+            color: #333;
+            padding: 18px 35px;
+            border: none;
+            font-size: 22px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        
+        .cta button:hover {
+            background: #ff9900;
+            transform: scale(1.1);
+        }
+        
+        @media (max-width: 768px) {
+            .feature-list,
+            .testimonial-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Innovate. Inspire. Achieve.</h1>
+        <p>"Unlock a Smarter, Faster, and More Connected Future!"</p>
+    </div>
+    <div class="container">
+        <section class="features">
+            <h2>Top Features</h2>
+            <div class="feature-list">
+                <div class="feature">🚀 Lightning-Fast Performance</div>
+                <div class="feature">🎨 Stunning & Intuitive UI</div>
+                <div class="feature">🔐 Advanced Security Features</div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-list">
+                <div class="testimonial">"The best product I've ever used!" - Kohli</div>
+                <div class="testimonial">"This has completely transformed my daily routine!" - Dhoni</div>
+                <div class="testimonial">"This product exceeded my expectations—absolutely life-changing!" - Rohit</div>
+            </div>
+        </section>
+        <section class="cta">
+            <h2>Get Started Today</h2>
+            <p>Join now!</p>
+            <button>Sign Up for Free</button>
+        </section>
+    </div>
+</body>
+
+</html>
